@@ -23,7 +23,7 @@ console.log(sharpy('Hello, World!', 'dim'));
 console.log(sharpy('Hello, World!', 'txRed', 'bold', 'underline', 'inverse'));
 
 // You like rainbows?
-console.log(sharpy('Hello, World!', 'rainbow', 'bold', 'underlines', 'italic'));
+console.log(sharpy('Hello, World!', 'txRainbow', 'bold', 'underlines', 'italic'));
 
 console.log(sharpy('Hello, World!', 'bgRainbow', 'bold', 'underlines', 'italic'));
 

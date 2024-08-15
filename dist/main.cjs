@@ -28,13 +28,13 @@ var Styles = /* @__PURE__ */ ((Styles2) => {
   Styles2[Styles2["bgMagenta"] = 45] = "bgMagenta";
   Styles2[Styles2["bgCyan"] = 46] = "bgCyan";
   Styles2[Styles2["bgWhite"] = 47] = "bgWhite";
-  Styles2[Styles2["rainbow"] = 254] = "rainbow";
+  Styles2[Styles2["txRainbow"] = 254] = "txRainbow";
   Styles2[Styles2["bgRainbow"] = 255] = "bgRainbow";
   return Styles2;
 })(Styles || {});
 function style(text, ...style2) {
   let string = text;
-  if (style2.includes(254 /* rainbow */) || style2.includes("rainbow")) {
+  if (style2.includes(254 /* txRainbow */) || style2.includes("txRainbow")) {
     const rainbow = [31 /* txRed */, 33 /* txYellow */, 32 /* txGreen */, 34 /* txBlue */, 36 /* txCyan */, 35 /* txMagenta */];
     string = text.match(/.{0,6}/g)?.map(
       (string2) => string2.split("").map((char, i) => `\x1B[${rainbow[i]}m${char}`).join("")

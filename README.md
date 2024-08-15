@@ -68,7 +68,7 @@ console.log(sharpyy('Hello, World!', 'dim'));
 console.log(sharpyy('Hello, World!', 'txRed', 'bold', 'underline', 'inverse'));
 
 // You like rainbows?
-console.log(sharpyy('Hello, World!', 'rainbow', 'bold', 'underlines', 'italic'));
+console.log(sharpyy('Hello, World!', 'txRainbow', 'bold', 'underlines', 'italic'));
 
 console.log(sharpyy('Hello, World!', 'bgRainbow', 'bold', 'underlines', 'italic'));
 ```
@@ -100,7 +100,7 @@ console.log(sharpyy('Hello, World!', 'dim'));
 console.log(sharpyy('Hello, World!', 'txRed', 'bold', 'underline', 'inverse'));
 
 // You like rainbows?
-console.log(sharpyy('Hello, World!', 'rainbow', 'bold', 'underlines', 'italic'));
+console.log(sharpyy('Hello, World!', 'txRainbow', 'bold', 'underlines', 'italic'));
 
 console.log(sharpyy('Hello, World!', 'bgRainbow', 'bold', 'underlines', 'italic'));
 ```
@@ -129,7 +129,7 @@ console.log(sharpyy('Hello, World!', 'bgRainbow', 'bold', 'underlines', 'italic'
 > - txMagenta
 > - txCyan
 > - txWhite
-> - rainbow
+> - txRainbow
 
 ## Background Colors
 

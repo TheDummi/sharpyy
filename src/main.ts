@@ -29,14 +29,14 @@ export enum Styles {
 	bgCyan = 46,
 	bgWhite = 47,
 
-	rainbow = 254,
+	txRainbow = 254,
 	bgRainbow = 255,
 }
 
 function style(text: string, ...style: Array<keyof typeof Styles | Styles>) {
 	let string = text;
 
-	if (style.includes(Styles.rainbow) || style.includes('rainbow')) {
+	if (style.includes(Styles.txRainbow) || style.includes('txRainbow')) {
 		const rainbow = [Styles.txRed, Styles.txYellow, Styles.txGreen, Styles.txBlue, Styles.txCyan, Styles.txMagenta];
 
 		string = text
