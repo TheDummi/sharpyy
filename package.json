@@ -1,0 +1,29 @@
+{
+	"name": "sharpy",
+	"version": "1.0.0",
+	"type": "module",
+	"main": "./dist/main.cjs",
+	"module": "./dist/main.mjs",
+	"exports": {
+		"require": {
+			"types": "./dist/main.d.cts",
+			"default": "./dist/main.cjs"
+		},
+		"import": {
+			"types": "./dist/main.d.mts",
+			"default": "./dist/main.mjs"
+		}
+	},
+	"scripts": {
+		"dev": "pkgroll --watch --tsconfig=tsconfig.json --clean-dist"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "MIT",
+	"description": "",
+	"devDependencies": {
+		"pkgroll": "^2.4.2",
+		"prettier": "^3.3.3",
+		"typescript": "^5.5.4"
+	}
+}
