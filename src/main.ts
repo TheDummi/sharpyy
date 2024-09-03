@@ -1,5 +1,7 @@
 /** @format */
 
+import tLink from 'terminal-link';
+
 export enum Styles {
 	normal = 0,
 	bold = 1,
@@ -67,4 +69,12 @@ function style(text: string, ...style: Array<keyof typeof Styles | Styles>) {
 	return style.map((style) => `\u001b[${Styles[style] || 0}m`).join('') + string + '\u001b[0m';
 }
 
+function link(name: string, url: URL, ...styles: Array<keyof typeof Styles | Styles>) {
+	if (styles.length === 0) styles = ['underline', 'bold', 'txBlue'];
+
+	return style(tLink(name, url.toString()), ...styles);
+}
+
 export default style;
+
+export { style, link };

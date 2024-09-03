@@ -2,6 +2,8 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
+var tLink = require('terminal-link');
+
 var Styles = /* @__PURE__ */ ((Styles2) => {
   Styles2[Styles2["normal"] = 0] = "normal";
   Styles2[Styles2["bold"] = 1] = "bold";
@@ -48,6 +50,12 @@ function style(text, ...style2) {
   }
   return style2.map((style3) => `\x1B[${Styles[style3] || 0}m`).join("") + string + "\x1B[0m";
 }
+function link(name, url, ...styles) {
+  if (styles.length === 0) styles = ["underline", "bold", "txBlue"];
+  return style(tLink(name, url.toString()), ...styles);
+}
 
 exports.Styles = Styles;
 exports.default = style;
+exports.link = link;
+exports.style = style;

@@ -1,6 +1,6 @@
 /** @format */
 
-import sharpy from '../dist/main.mjs';
+import sharpy, { link } from '../dist/main.mjs';
 
 console.log(sharpy('Hello, World!', 'invisible'));
 
@@ -26,5 +26,7 @@ console.log(sharpy('Hello, World!', 'txRed', 'bold', 'underline', 'inverse'));
 console.log(sharpy('Hello, World!', 'txRainbow', 'bold', 'underlines', 'italic'));
 
 console.log(sharpy('Hello, World!', 'bgRainbow', 'bold', 'underlines', 'italic'));
+
+console.log(link('dummi.me', 'https://dummi.me'));
 
 export default sharpy;

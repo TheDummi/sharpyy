@@ -1,5 +1,7 @@
 /** @format */
 
+const { link } = require('../dist/main.cjs');
+
 const { default: sharpy } = require('../dist/main.cjs');
 
 console.log(sharpy('Hello, World!', 'invisible'));
@@ -26,5 +28,7 @@ console.log(sharpy('Hello, World!', 'txRed', 'bold', 'underline', 'inverse'));
 console.log(sharpy('Hello, World!', 'txRainbow', 'bold', 'underlines', 'italic'));
 
 console.log(sharpy('Hello, World!', 'bgRainbow', 'bold', 'underlines', 'italic'));
+
+console.log(link('dummi.me', 'https://dummi.me'));
 
 module.exports = sharpy;

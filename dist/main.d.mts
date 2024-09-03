@@ -29,5 +29,6 @@ declare enum Styles {
     bgRainbow = 255
 }
 declare function style(text: string, ...style: Array<keyof typeof Styles | Styles>): string;
+declare function link(name: string, url: URL, ...styles: Array<keyof typeof Styles | Styles>): string;
 
-export { Styles, style as default };
+export { Styles, style as default, link, style };
